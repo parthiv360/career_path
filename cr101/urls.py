@@ -17,8 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from django.urls.conf import include
 
+
+from django.contrib.auth import views as auth_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('login.urls')),
+    path('login', include('login.urls')),
+    path('', include('main.urls')),
+    path('password/', auth_views.PasswordResetView.as_view(template_name= 'login/password-change1.html'),name="reset_password"),
+    path('login/reset_password_sent/', auth_views.PasswordResetDoneView.as_view(template_name= 'login/password-reset-sent-1.html'),name="password_reset_done"),
+    path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name= 'login/password-change2.html'),name="password_reset_confirm"),
+    path('reset_password_complete', auth_views.PasswordResetCompleteView.as_view(template_name= 'login/password-change-done-1.html'),  name="password_reset_complete"),
     
 ]

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'login',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -77,9 +78,9 @@ WSGI_APPLICATION = 'cr101.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cr101',
+        'NAME': 'cr_101',
         'USER': 'root',
-        'PASSWORD': 'Parthiv11@',
+        'PASSWORD': 'Asdfg@125',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
@@ -98,6 +99,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'OPTIONS': {
+            'min_length': 8,
+        }
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -132,11 +136,12 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# SMTP Configuration
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'parthivsarkar360@gmail.com'
-EMAIL_HOST_PASSWORD = 'parthiv11@'
+EMAIL_HOST_USER = "path.career.path@gmail.com"
+EMAIL_HOST_PASSWORD = "Asdfg@125"
+
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 7
+

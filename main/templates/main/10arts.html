@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ARTS 9 & 10</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section id="hero" class="hero" style="background-image: url(https://images.unsplash.com/photo-1555679486-e341a3e7b6de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);">
+    <div class="container text-center">
+      <div class="row">
+        
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+          ARTS FOR JUNIORS
+        </h1>
+
+        <p class="tagline">
+          “There are painters who transform the sun into a yellow spot, but there are others who,thanks to their art and intelligence, transform a yellow spot into the sun.”
+-Pablo Picasso
+        </p>
+        <a class="btn btn-full scrollto" href="#team">CHECK NOW</a>
+      </div>
+    </div>
+
+  </section>
+
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+
+     <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+             
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="team" id="team">
+        <h2 class="text-center">
+            COURSES AFTER 10th FOR ARTS
+          </h2>
+<h4><span class="ez-toc-section" id="BA_Bachelor_of_Administration"></span><strong>BA (Bachelor of Administration)</strong><span class="ez-toc-section-end"></span></h4>
+<ul>
+<li><strong>History and Archaeology</strong></li>
+<li><strong>Theater</strong></li>
+<li><strong>Hindi</strong></li>
+<li><strong>Finance</strong></li>
+<li><strong>Literature</strong></li>
+<li><strong>Humanities</strong></li>
+<li><strong>Philosophy</strong></li>
+<li><strong>Music</strong></li>
+<li><strong>Yoga and Naturopathy</strong></li>
+<li><strong>Tourism</strong></li>
+<li><strong>Hotel Management</strong></li>
+<li><strong>Journalism and Mass Communication</strong></li>
+<li><strong>Library Science</strong></li>
+<li><strong>Applied Science</strong></li>
+<li><strong>Fine Arts</strong></li>
+<li><strong>Home Science</strong></li>
+<li><strong>Interior Designing</strong></li>
+<li><strong>Psychology</strong></li>
+<li><strong>Animation and multimedia</strong></li>
+</ul>
+<h4><span class="ez-toc-section" id="Technical_Courses"></span><strong>Technical Courses</strong><span class="ez-toc-section-end"></span></h4>
+<p>You can do technical courses after 12th Arts if you love spending time and dealing with machines.</p>
+<ul>
+<li><strong>BCA</strong></li>
+<li><strong>B Architecture</strong></li>
+</ul>
+<h3><span class="ez-toc-section" id="Management_Courses"></span>Management Courses<span class="ez-toc-section-end"></span></h3>
+<p>Management courses are those courses that are always on demand and It&#8217;s like an evergreen course with a variety of jobs.</p>
+<p>Students who are not interested in traditional courses can go with Management courses. So, let&#8217;s have an eye on some Management courses-</p>
+<ul>
+<li><strong>BBA (Bachelor of Business Administration)</strong></li>
+<li><strong>BMS (Bachelor of Management Studies)</strong></li>
+<li><strong>Integrated BBA + MBA program (5 years)</strong></li>
+<li><strong>BHM (Bachelor of Hotel Management)</strong></li>
+<li><strong>Retail Management</strong></li>
+</ul>
+<h3><span class="ez-toc-section" id="Physical_Education_Courses"></span><strong>Physical Education Courses</strong><span class="ez-toc-section-end"></span></h3>
+<ul>
+<li><strong>Bachelor of Physical Education</strong></li>
+<li><strong>Diploma in Yoga Education</strong></li>
+</ul>
+
+<h4><span class="ez-toc-section" id="Designing_Courses"></span>Designing Courses<span class="ez-toc-section-end"></span></h4>
+<p>Many students have good skills in design. They may end up choosing these designing courses when you apply for a job it doesn&#8217;t matter from which stream you are they just need talent.</p>
+<ul>
+<li><strong>Bachelor of Interior Designing</strong></li>
+<li><strong>Furniture and Interior Design Course</strong></li>
+<li><strong>Bachelor of Design (leather and Accessory)</strong></li>
+<li><strong>Bachelor of Textile Design</strong></li>
+</ul>
+<h4><span class="ez-toc-section" id="Law_Courses"></span>Law Courses<span class="ez-toc-section-end"></span></h4>
+<p>After 12 the Arts, interested students can go for an integrated course which lasts 5 years. Some of the well-known courses are-</p>
+<ul>
+<li><strong>BA+LL.B.</strong></li>
+<li><strong>BBA+LL.B</strong></li>
+</ul>
+<h4><span class="ez-toc-section" id="Fashion_Courses"></span>Fashion Courses<span class="ez-toc-section-end"></span></h4>
+<ul>
+<li><strong>Bachelor of Fashion Design and Technology</strong></li>
+<li><strong>Bachelor of Fashion Communication</strong></li>
+</ul>
+<h4><span class="ez-toc-section" id="Teaching_Courses"></span>Teaching Courses<span class="ez-toc-section-end"></span></h4>
+<ul>
+<li><strong>B.El.Ed (Bachelor of Elementary Education) (4 years)</strong></li>
+<li><strong>Diploma in Elementary Education</strong></li>
+<li><strong>B P.Ed (Bachelor of Physical Education)</strong></li>
+<li><strong>B.Ed (Primary teachers training course)</strong></li>
+</ul>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:chooseclass' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,48 @@
+from django.urls import path, re_path
+from django.urls.resolvers import URLPattern
+from . import views
+
+app_name = 'main'
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('chooseclass', views.chooseclass, name='chooseclass'),
+    path('ten/stream', views.streamten, name='streamten'),
+    path('tweleve/stream', views.stream, name='stream'),
+    path('impexam', views.imp_exam, name='impexam'),
+    path('about', views.contact, name='contact'),
+    path('studyabroad', views.studyabroad, name='studyabroad'),
+    path('studyabroad/sat', views.sat, name='sat' ),
+    path('studyabroad/gre', views.gre, name='gre'),
+    path('studyabroad/gmat', views.gmat, name='gmat'),
+    path('studyabroad/toefl-ielts', views.toefl, name='toefl'),
+    path('science', views.science, name='science'),
+    path('science/engineering', views.eng, name='eng'),
+    path('science/engineering/exams', views.engexams, name='engexam'),
+    path('science/engineering/institutes', views.enginst, name='engins'),
+    path('science/engineering/branches', views.engbra, name='engbra'),
+    path('science/engineering/coaches', views.engcoach, name='engcoach'),
+    path('commerce', views.commerce, name='commerce'),
+    path('science/medical', views.medical, name='medical'),
+    path('science/medical/exams', views.medexam, name='medexam'),
+    path('science/medical/institutions', views.medinst, name='medinst'),
+    path('science/general-science', views.gensci, name='gensci'),
+    path('science/general-science/degrees', views.genscideg, name='gendeg'),
+    path('science/general-science/institutes', views.gensciinst, name='geninst'),
+    path('arts', views.arts, name='arts'),
+    path('commerce/diploma', views.comdip, name='comdip'),
+    path('commerce/without-maths', views.comwmaths, name='wmath'),
+    path('commerce/without-maths/colleges', views.comwmathscol, name='comwmathscol'),
+    path('commerce/without-maths/courses', views.comwmathscor, name='comwmathscor'),
+    path('commerce/degree-mathematics', views.commaths, name='commaths'),
+    path('commerce/degree-mathematics/courses', views.commathscouse, name='commathscourse'),
+    path('commerce/degree-mathematics/institutes', views.commathinst, name='commathsinst'),
+    path('ten/science', views.scienceten, name='scienceten'),
+    path('ten/commerce', views.commerceten, name='commerceten'),
+    path('ten/arts', views.artsten, name='artsten'),
+    path('ten/diploma', views.diplomaten, name='diplomaten'),
+    path('twelve/arts/diploma', views.artsdip, name='artsdip'),
+    path('twelve/arts/degree', views.artsdeg, name='artsdeg'),
+    path('twelve/arts/degree/colleges', views.artsdegcol, name='artsdegcol'),
+    path('twelve/arts/degree/courses', views.artsdegcor, name='artsdegcor'), 
+
+]

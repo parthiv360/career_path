@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Choose Class</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section id="hero" class="hero" style="background-image: url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);">
+    <div class="container text-center">
+      <div class="row">
+
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+          TELL US ABOUT YOUR CLASS
+        </h1>
+
+        <p class="tagline">
+            We are here to assist you on your way to success.
+        </p>
+        <a class="btn btn-full scrollto" href="#team">CHOOSE YOUR CLASS</a>
+      </div>
+    </div>
+
+  </section>
+
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="assets/img/logo-nav.png" alt=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+          <h2 class="text-center">
+            Choose your class
+          </h2>
+  
+          <div class="row">
+            <div class="col-sm-3 col-xs-6" style="margin: auto;">
+              <div class="card card-block">
+                <a href="{% url 'main:streamten' %}"><img alt="" class="team-img" src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+                  <div class="card-title-wrap">
+                    <span class="card-title">9 & 10</span> <span class="card-text"></span>
+                  </div>
+  
+                  <div class="team-over">
+                    <h4 class="hidden-md-down">
+                        Available Streams
+                    </h4>
+  
+                    <p>
+                      1. SCIENCE <br>
+                      2. COMMERCE <br>
+                      3. ARTS <br>
+                      4. DIPLOMA <br>
+                     </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            <div class="col-sm-3 col-xs-6" style="margin: auto;">
+              <div class="card card-block">
+                <a href="{% url 'main:stream' %} "><img alt="" class="team-img" src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80">
+                  <div class="card-title-wrap">
+                    <span class="card-title">11 & 12</span> <span class="card-text"></span>
+                  </div>
+  
+                  <div class="team-over">
+                    <h4 class="hidden-md-down">
+                      Available Streams
+                    </h4>
+  
+                    <p>
+                        1. SCIENCE <br>
+                        2. COMMERCE <br>
+                        3. ARTS <br>
+                        4. STUDY ABROAD <br>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+  
+            
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

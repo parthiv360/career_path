@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Log In</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  
+  
+
+  
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  
+  
+
+  </section>
+
+  
+  
+      </nav>
+
+      
+    </div>
+  </header>
+
+  <main id="main">
+
+    
+    </section>
+
+    
+    
+            
+    </section>
+
+    
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Login</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <form action="{% url 'login:login' %}" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <!-- <input type="checkbox" name= 'chk' class="form-check-input" id="exampleCheck1"> -->
+              <!-- <label class="form-check-label" for="exampleCheck1">Remember me</label> -->
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+            {% for message in messages%}
+						<h3>
+              <br>
+							{{ message }}
+						</h3>
+						{% endfor %}
+          </form>
+          <div class="d-flex justify-content-center">
+            <a href="{% url 'login:reset_password' %}">Forgot your password?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  
+  
+
+              
+              
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

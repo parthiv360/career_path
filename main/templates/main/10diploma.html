@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Diploma 9 & 10</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <section id="hero" class="hero" style="background-image: url(https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);">
+    <div class="container text-center">
+      <div class="row">
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+          NOW YOU CAN BECOME SELF-MADE AFTER 10TH. HAPPY!!!
+        </h1>
+
+        <p class="tagline">
+          Pave your own path to success. Choose from one of our recommended courses.
+        </p>
+        <a class="btn btn-full scrollto" href="#team">Start Noe</a>
+      </div>
+    </div>
+
+  </section>
+
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <section class="team" id="team">
+        <h2 class="text-center">
+            OPTIONS FOR COMMERCE AFTER 10th
+          </h2>
+          <p><span style="font-size: 14pt;"><strong>Why Get a Diploma After Class 10th</strong></span></p>
+<ul>
+<li><strong><span data-preserver-spaces="true">Art Teacher Diploma:</span></strong><span data-preserver-spaces="true"> This course aimed to train students in visual design. The duration, of course, is two years.</span></li>
+<li><strong><span data-preserver-spaces="true">Stenography Diploma:</span></strong><span data-preserver-spaces="true"> Students will learn shorthand techniques in this course. The duration of the course is one year.</span></li>
+<li><strong><span data-preserver-spaces="true">Diploma in Beauty Care:</span></strong><span data-preserver-spaces="true"> This course is preferred for female students. The duration of the course is only 04 months.</span></li>
+<li><strong><span data-preserver-spaces="true">Diploma in Cyber Security:</span></strong><span data-preserver-spaces="true"> In this course, students will learn ethical hacking. The duration is 01 year.</span></li>
+<li><strong><span data-preserver-spaces="true">Diploma in Engineering:</span></strong><span data-preserver-spaces="true"> In this diploma, students may apply for various Engineering fields. It is a three years diploma.</span></li>
+<li><strong><span data-preserver-spaces="true">Diploma in Fire Safety:</span></strong><span data-preserver-spaces="true"> It is a six-month course. It teaches fire safety precautions.</span></li>
+<li><span data-preserver-spaces="true">It will create opportunities for a fire safety officer.</span></li>
+<li><a class="editor-rtfLink" href="https://educationiconnect.com/assam-iti-admission/" target="_self" rel="noopener follow" data-wpel-link="internal"><strong><span data-preserver-spaces="true">Assam ITI Admission</span></strong></a><strong><span data-preserver-spaces="true">:</span></strong><span data-preserver-spaces="true"> ITI is also a 2 or 3 years Diploma Offer By Institute with professional knowledge.</span></li>
+<li><span data-preserver-spaces="true">Another good factor of Diploma courses is that they are also available in </span><a class="editor-rtfLink" href="https://educationiconnect.com/deb-rules-regulations/" target="_self" rel="noopener follow" data-wpel-link="internal"><strong><span data-preserver-spaces="true">Distance learning</span></strong></a><span data-preserver-spaces="true">. People can acquire these from anywhere. They have to fulfill the eligibility and go through the passing criteria. </span></li>
+<li><span data-preserver-spaces="true">After completing a diploma, the candidate can further apply for graduation. The course is offered in a wide range of subjects. There are a total of 256 courses available. Some of which are given below for insight.</span></li>
+</ul>
+
+<h4 id="ucd5pztufqhka4cxdiploma-in-mechanical-engineering-after-10th"><span style="font-size: 18pt;"><strong>Engineering Diploma After 10th 2021-22</strong></span></h4>
+<table>
+<tbody>
+<tr>
+<td width="580"><span style="font-size: 12pt;"><strong>Course</strong></span></td>
+<td width="64"><span style="font-size: 12pt;"><strong>Duration</strong></span></td>
+<td width="64"><span style="font-size: 12pt;"><strong>Fee</strong></span></td>
+</tr>
+<tr>
+<td width="580">DIPLOMA IN COMPUTER</td>
+<td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN COMPUTER SCIENCE AND ENGINEERING&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-computer-science-and-engineering-admission/&quot;,&quot;DIPLOMA IN COMPUTER SCIENCE AND ENGINEERING&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-computer-science-and-engineering-admission/">3 Years</td>
+<td>80,000</td>
+</tr>
+<tr>
+<td width="580" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN ELECTRICAL AND ELECTRONICS ENGINEERING&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-electrical-and-electronics-engineering-admission/&quot;,&quot;DIPLOMA IN ELECTRICAL AND ELECTRONICS ENGINEERING&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-electrical-and-electronics-engineering-admission/">DIPLOMA IN ELECTRICAL</td>
+<td>3 Years</td>
+<td>80,063</td>
+</tr>
+<tr>
+<td width="580" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN ELECTRICAL ENGINEERING&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-electrical-engineering-admission/&quot;,&quot;DIPLOMA IN ELECTRICAL ENGINEERING&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-electrical-engineering-admission/">DIPLOMA IN  ENGINEERING</td>
+<td>3 Years</td>
+<td>80,126</td>
+</tr>
+<tr>
+<td width="580" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN ELECTRONICS &amp; COMMUNICATION ENGINEERING&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-electronics-communication-engineering-admission/&quot;,&quot;DIPLOMA IN ELECTRONICS &amp; COMMUNICATION ENGINEERING&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-electronics-communication-engineering-admission/">DIPLOMA IN COMMUNICATION</td>
+<td>3 Years</td>
+<td>80,189</td>
+</tr>
+<tr>
+<td width="580" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN ELECTRONICS &amp; TELECOMMUNICATION ENGINEERING&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-electronics-telecommunication-engineering-admission/&quot;,&quot;DIPLOMA IN ELECTRONICS &amp; TELECOMMUNICATION ENGINEERING&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-electronics-telecommunication-engineering-admission/">DIPLOMA IN TELECOMMUNICATION</td>
+<td>3 Years</td>
+<td>80,252</td>
+</tr>
+<tr>
+<td width="580" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN ELECTRONICS AND INSTRUMENTATION ENGINEERING&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-electronics-and-instrumentation-engineering-admission/&quot;,&quot;DIPLOMA IN ELECTRONICS AND INSTRUMENTATION ENGINEERING&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-electronics-and-instrumentation-engineering-admission/">DIPLOMA IN  INSTRUMENTATION</td>
+<td>3 Years</td>
+<td>80,315</td>
+</tr>
+<tr>
+<td width="580" data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;DIPLOMA IN FOOD TECHNOLOGY&quot;}" data-sheets-formula="=HYPERLINK(&quot;https://educationiconnect.com/diploma-in-food-technology-admission/&quot;,&quot;DIPLOMA IN FOOD TECHNOLOGY&quot;)" data-sheets-hyperlink="https://educationiconnect.com/diploma-in-food-technology-admission/">DIPLOMA IN FOOD</td>
+<td>3 Years</td>
+<td>80,378</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h4 class="title single-title entry-title"><strong>Diploma Courses After 10th Science and Engineering</strong></h4>
+<p style="text-align: justify;">Diploma Courses after 10th, I have listed this because they have a relatively high market value. These days, graduate engineers are also in great demand. After completing the course, you can quickly get a job in core industries or other related industries, depending on your skill. It is nice to work abroad.</p>
+<p style="text-align: justify;">Of course, the primary classes, electrical, civil, or mechanical engineering, are the best diploma engineering courses. You may also use other divisions such as computers, aerospace, etc. I demand that the core divisions are chosen since the employment opportunities are much more encouraging.</p>
+<p><span style="font-size: 14pt;"><strong>Diploma in Biotechnology</strong></span></p>
+<table style="border-collapse: collapse; width: 100%; box-sizing: border-box; border-spacing: 0px; max-width: 100%; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; text-align: start; widows: 2; -webkit-text-stroke-width: 0px;" border="0" width="100%" cellspacing="0px" cellpadding="0">
+<colgroup>
+<col style="width: 48pt;" span="2" width="64" /> </colgroup>
+<tbody>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl64" style="height: 15.75pt; width: 48pt; box-sizing: border-box;" width="64" height="21"><span style="font-size: 12pt; color: #000000;">Course level</span></td>
+<td class="xl64" style="border-left: none; width: 48pt; box-sizing: border-box;" width="64"><span style="font-size: 12pt; color: #000000;">Diploma</span></td>
+</tr>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl64" style="height: 15.75pt; border-top: none; box-sizing: border-box;" height="21"><span style="font-size: 12pt; color: #000000;">Examination Type</span></td>
+<td class="xl64" style="border-top: none; border-left: none; box-sizing: border-box;"><span style="font-size: 12pt; color: #000000;">Semester</span></td>
+</tr>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl64" style="height: 15.75pt; border-top: none; box-sizing: border-box;" height="21"><span style="font-size: 12pt; color: #000000;">Eligibility</span></td>
+<td class="xl64" style="border-top: none; border-left: none; box-sizing: border-box;"><span style="font-size: 12pt; color: #000000;">Passing standard 10th with a minimum of 45% number</span></td>
+</tr>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl65" style="height: 15.75pt; border-top: none; box-sizing: border-box;" height="21"><span style="font-size: 12pt; color: #000000;">Duration</span></td>
+<td class="xl65" style="border-top: none; border-left: none; box-sizing: border-box;"><span style="font-size: 12pt; color: #000000;">3 Years</span></td>
+</tr>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl65" style="height: 15.75pt; border-top: none; box-sizing: border-box;" height="21"><span style="font-size: 12pt; color: #000000;">Course Fee</span></td>
+<td class="xl65" style="border-top: none; border-left: none; box-sizing: border-box;"><span style="font-size: 12pt; color: #000000;">25000 &#8211; 150000</span></td>
+</tr>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl64" style="height: 15.75pt; border-top: none; box-sizing: border-box;" height="21"><span style="font-size: 12pt; color: #000000;">Average Starting Salary</span></td>
+<td class="xl64" style="border-top: none; border-left: none; box-sizing: border-box;"><span style="font-size: 12pt; color: #000000;">INR 2.5 Lac to 8 Lacs</span></td>
+</tr>
+<tr style="height: 15.75pt; box-sizing: border-box;">
+<td class="xl65" style="height: 15.75pt; border-top: none; box-sizing: border-box;" height="21"><span style="font-size: 12pt; color: #000000;">Admission Process</span></td>
+<td class="xl65" style="border-top: none; border-left: none; box-sizing: border-box;"><span style="font-size: 12pt; color: #000000;">Direct.</span></td>
+</tr>
+</tbody>
+</table>
+<br>
+
+<p><span style="font-size: 14pt;"><strong>Diploma Business Management </strong></span></p>
+<p><span data-preserver-spaces="true">Diploma Courses after 10th, This course is defined as DBM and is an education in essential management. It reflects on the fundamentals of management and organizational conduct studies. It is not as comprehensive in its degrees (BBA, BMS, etc.) and its equivalents PG (MBA &amp; PGDM).</span></p>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

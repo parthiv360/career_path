@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Choose Stream - 9 & 10</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  
+
+  </section>
+
+  
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="assets/img/logo-nav.png" alt=""></a>
+        
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+          
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    
+
+    </section>
+
+    
+    </section>
+   
+    
+    <section class="features" id="features">
+
+      <div class="container">
+        <h2 class="text-center">
+          SELECT YOUR AREA OF INTREST
+        </h2>
+
+        <div class="row">
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <a href="{% url 'main:scienceten' %}" >
+                  <div class="feature-icon">
+                    <i class="bi bi-journal-minus"></i>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <h3>
+                SCIENCE
+                </h3>
+
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <a href="{% url 'main:commerceten' %}">
+                  <div class="feature-icon">
+                    <i class="bi bi-card-checklist"></i>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <h3>
+                  COMMERCE
+                </h3>
+
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <a href="{% url 'main:artsten' %}">
+                <div class="feature-icon">
+                  <i class="bi bi-journal-bookmark-fill"></i>
+                </div>
+                </a>
+              </div>
+
+              <div>
+                <h3>
+                  ARTS
+                </h3>
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="feature-col col-lg-4 col-xs-12">
+            <div class="card card-block text-center">
+              <div>
+                <a href="{% url 'main:diplomaten' %}">
+                  <div class="feature-icon">
+                    <i class="bi bi-bookmark-star-fill"></i>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                  <h3>
+                    DIPLOMA
+                  </h3>
+                
+              </div>
+            </div>
+          </div>
+
+          
+      </div>
+
+    </section>
+
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

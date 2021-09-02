@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Career Path</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  <section id="hero" class="hero" style="background-image: url('https://pix10.agoda.net/geo/city/318/1_318_02.jpg?s=1920x822');">
+    <div class="container text-center">
+      <div class="row">
+        
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+          A BRIGHT FUTURE AWAITS YOU
+        </h1>
+
+        <p class="tagline">
+          START YOUR CAREER PLANNING TODAY WITH US.
+        </p>
+        <a class="btn btn-full scrollto" href="#join">START YOUR CAREER</a>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="assets/img/logo-nav.png" alt=""></a>
+        
+        
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          
+          
+          
+            <ul>
+              
+              
+              
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'login:register' %}">Sign Up</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:login' %}">Login</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      
+    </div>
+  </header>
+
+  <main id="main">
+
+    
+    <section class="about" id="about">
+
+      <div class="container text-center">
+        <h2>
+          ABOUT CAREER PATH
+        </h2>
+
+        <p>
+          Our mission is very simple. To Nourish and guide young minds with potentials to their right destiantions. Join us and 
+          <br> let us help you choose the right path for achieving your dreams . 
+          <br> And do you know what the best part is !!. It's Completely free.
+        </p>
+    </section> 
+    <section class="welcome text-center">
+      <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="https://cdn2.civitatis.com/estados-unidos/los-angeles/guia/los-angeles.jpg">
+    </section>
+
+    
+    
+
+    </section>
+
+    
+    <section class="cta" id="join">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 text-lg-start text-center">
+            <h2>
+              JOIN US NOW
+            </h2>
+
+            <p>
+              Don't delay! A bright future awaits your way.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+            <a class="btn btn-ghost" href="{% url 'login:register' %}">JOIN NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    </section>
+
+    
+    <!-- <section class="team" id="team">
+      <div class="container">
+        <h2 class="text-center">
+          Meet our team
+        </h2>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6" style="margin: auto;">
+            <div class="card card-block">
+              <img alt="" class="team-img" src="{% static 'my-profile.jpg' %}">
+                <div class="card-title-wrap">
+                  <span class="card-title">Anubhav Banerjee</span> <span class="card-text">Career Path Team</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    Connect with me
+                  </h4>
+
+                  <nav class="social-nav">
+                    <a href="https://www.instagram.com/anubhavbanerjee_lm10/"><i class="bi bi-instagram"></i></a> <a href="https://github.com/Anubhav-2003"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/anubhav-banerjee-133639200/"><i class="bi bi-linkedin"></i></a> 
+                  </nav>
+            
+                  <p>
+                    I am a high school Senior, a Harvard CS50X certificate holder, full stack web developer .....
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6" style="margin: auto;">
+            <div class="card card-block">
+              <img alt="" class="team-img" src="{% static 'parthiv.jpeg' %}">
+                <div class="card-title-wrap">
+                  <span class="card-title">Parthiv Sarkar</span> <span class="card-text">Career Path Team</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    Connect with me
+                  </h4>
+
+                  <nav class="social-nav">
+                    <a href="https://www.instagram.com/_._hollowwww_._/"><i class="bi bi-instagram"></i></a> <a href="https://github.com/parthiv360"><i class="bi bi-github"></i></a> <a href="https://www.linkedin.com/in/parthiv-sarkar-0a754b203/"><i class="bi bi-linkedin"></i></a> 
+                  </nav>
+
+                  <p>
+                    I am a tech enthusiast and a football lover. Currently I am pursing undergrad degree from BIT MESRA. My interest lies in full stack development and competitive programming
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          
+    </section> -->
+
+    
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="section-title">Contact Us</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>Jamshedpur<br>Jharkhand, JH 831001</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>path.career.path@gmail.com</p>
+              </div>
+
+              <!-- <div>
+                <i class="bi bi-phone"></i>
+                <p>+1 5589 55488 55s</p>
+              </div> -->
+
+            </div>
+          </div>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

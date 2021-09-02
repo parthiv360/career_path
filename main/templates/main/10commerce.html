@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Commerce 9 & 10</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+ 
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+   
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 text-lg-start text-center">
+            <h2>
+               Now you can study commerce without Maths.
+            </h2>
+
+            <p>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+            <a class="btn btn-ghost" href="#nomaths">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+        <h2 class="text-center">
+            OPTIONS FOR COMMERCE AFTER 10th
+          </h2>
+          <h3>
+            <h4>1. Accountancy </h4>
+            The Accountancy subject includes measuring, processing and communication of the crucial financial data of a firm. This subject also includes analysing as well as calculating the results of the economic steps of an organization.
+            <br>
+            <br>
+            <h4>2. Business Studies</h4>
+            
+            Technology has developed to a greater extent today. So, various new methods of carrying the business have emerged. The candidates will get familiarized about the same by studying Business Studies after 10th.
+            <br>
+            <br>
+            <h4 id="nomaths">3. Economics</h4>
+            
+            The candidates who study economics ar micro and macro levels is called Economics. Economics is one of the most interesting subjects, as it offers a detailed study about how the economy in national and international markets work.
+            <br>
+            <br>
+            <h3><strong>Career Options After 10th in Commerce (Without Maths)</strong></h3>
+                <p>Mathematics is a complicated subject, so many candidates opt for Commerce without mathematics. Such candidates need not worry about their career options because even without Mathematics, Commerce has equal opportunities which include:</p>
+                <p><strong>Bachelor of Commerce</strong></p>
+                <p>Bachelor of Commerce (BCom) is a three-year course which almost all the Commerce Universities will offer. For those who haven’t studied mathematics after 10th grade will be offered with an Honours program. The candidates who opt for BCom will specialize in Banking, Retail Management, Foreign Trade, etc.</p>
+                <p><strong>Bachelor of Business Administration</strong></p>
+                <p>The BBA course is a 3-year undergraduate degree which offers an array of specialisation from Finance, Marketing to Accounting and Human Resource Management. This degree is internationally recognized and offers the learners with quintessential managerial and business skills.</p>
+                <p><strong>Bachelor of Management Studies</strong></p>
+                <p>BMS course is for those who want to explore managerial degrees in commerce after their 12th grade. This course focuses on Management studies as it offers the students with an in-depth understanding of managerial theories, concepts as well as equips them with key communication and career skills to explore higher-level professions in this field.</p>
+                <p><strong>Bachelor of Hotel Management</strong></p>
+                <p>Bachelor of Hotel Management is for those candidates who wish to explore one of the lucrative career options after 10th in commerce. This course offers candidates with all the necessary knowledge and skills to build a strong career in hotel management.</p>
+                <br>
+                <br>
+                <h3><strong>Career Options After 10th in Commerce (With Maths)</strong></h3>
+                <p>If the candidate chooses mathematics, they will have all the options, even those which can be taken without mathematics. These career options include:</p>
+                <ul>
+                <li>BA Economics</li>
+                <li>BA in English Literature</li>
+                <li>BA Mathematics</li>
+                <li>Bachelor of Business Studies (BBS)</li>
+                <li>BBM Course</li>
+                <li>BCom Hons</li>
+                </ul>
+                <h3><strong>Professional Degrees as Career Options After 10th in Commerce</strong></h3>
+                <p>Apart from the degree courses, the candidate can pursue a number of professional courses as well. The candidates can prepare for these courses while in school and in college and finish the courses along with their graduation. These professional courses include:</p>
+                <ul>
+                <li>CA Course</li>
+                <li>CS Course</li>
+                <li>CMA (Cost &amp; Management Accountant)</li>
+                <li>CFA Course (Chartered Financial Analyst)</li>
+                </ul>
+                <h3><strong>Creative Courses After 10th in Commerce</strong></h3>
+                <p>The candidates will also have options to choose from courses and career options in Arts, Law, Humanities and related fields. The popular creative courses include:</p>
+                <ul>
+                <li>Bachelor of Arts (BA) Courses</li>
+                <li>Journalism courses</li>
+                <li>Mass Communication Courses</li>
+                <li>Fashion Design Courses</li>
+                <li>Law Courses</li>
+                <li>Digital Filmmaking Courses</li>
+                <li>Animation Courses</li>
+                <li>Photography Courses</li>
+                </ul>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

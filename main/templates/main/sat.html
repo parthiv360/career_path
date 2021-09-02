@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SAT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  </section>
+
+  
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+         
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+ 
+        </div>
+      </div>
+
+    </section>
+
+   
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 text-lg-start text-center">
+            <h2>
+                SAT
+            </h2>
+
+            <p>
+                The SAT is a standardized test widely used for college admissions in the United States. Since its debut in 1926, its name and scoring have changed several times; originally called the Scholastic Aptitude Test, it was later called the Scholastic Assessment Test, then the SAT I: Reasoning Test, then the SAT Reasoning Test, then simply the SAT.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+            <a class="btn btn-ghost" href="#team">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    </section>
+
+    
+    <section class="team" id="team">
+      
+        <h2 class="text-center">
+          ABOUT SAT
+        </h2>
+        <h3 style="color: #199EB8;">
+          1. Structure:-
+        </h3>
+        <h4>
+            The SAT two main sections, namely Evidence-Based Reading and Writing (EBRW, normally known as the "English" portion of the test) and the Math section. These are both further broken down into four sections: Reading, Writing and Language, Math (no calculator), and Math (calculator allowed). The test taker was also optionally able to write an essay which, in that case, is the fifth test section. The total time for the scored portion of the SAT is three hours (or three hours and fifty minutes if the optional essay section was taken). Some test takers who are not taking the essay may also have a fifth section, which is used, at least in part, for the pretesting of questions that may appear on future administrations of the SAT. (These questions are not included in the computation of the SAT score.)
+
+            Two section scores result from taking the SAT: Evidence-Based Reading and Writing, and Math. Section scores are reported on a scale of 200 to 800, and each section score is a multiple of ten. A total score for the SAT is calculated by adding the two section scores, resulting in total scores that range from 400 to 1600. In addition to the two section scores, three "test" scores on a scale of 10 to 40 are reported, one for each of Reading, Writing and Language, and Math, with increment of 1 for Reading / Writing and Language, and 0.5 for Math. There are also two cross-test scores that each range from 10 to 40 points: Analysis in History/Social Studies and Analysis in Science.[30] The essay, if taken, was scored separately from the two section scores.[31] Two people score each essay by each awarding 1 to 4 points in each of three categories: Reading, Analysis, and Writing.[32] These two scores from the different examiners are then combined to give a total score from 2 to 8 points per category. Though sometimes people quote their essay score out of 24, the College Board themselves do not combine the different categories to give one essay score, instead giving a score for each category.
+            
+            There is no penalty or negative marking for guessing on the SAT: scores are based on the number of questions answered correctly. The optional essay will not be offered after the June 2021 administration.[19][20] College Board said it would discontinue the essay section because "there are other ways for students to demonstrate their mastery of essay writing," including the test's reading and writing portion.[19][20] It also acknowledged that the COVID-19 pandemic had played a role in the change, accelerating 'a process already underway'.
+
+            
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          2. Reading Section:-
+        </h3>
+        <h4>
+The Reading Test of the SAT contains one section of 52 questions and a time limit of 65 minutes.[31] All questions are multiple-choice and based on reading passages. Tables, graphs, and charts may accompany some passages, but no math is required to correctly answer the corresponding questions. There are five passages (up to two of which may be a pair of smaller passages) on the Reading Test and 10-11 questions per passage or passage pair. SAT Reading passages draw from three main fields: history, social studies, and science. Each SAT Reading Test always includes: one passage from U.S. or world literature; one passage from either a U.S. founding document or a related text; one passage about economics, psychology, sociology, or another social science; and, two science passages. Answers to all of the questions are based only on the content stated in or implied by the passage or passage pair.[33]
+
+The Reading Test contributes (with the Writing and Language Test) to two subscores, each ranging from 1 to 15 points:[30]
+
+Command of Evidence
+Words in Context
+Writing and Language Test
+The Writing and Language Test of the SAT is made up of one section with 44 multiple-choice questions and a time limit of 35 minutes.[31] As with the Reading Test, all questions are based on reading passages which may be accompanied by tables, graphs, and charts. The test taker will be asked to read the passages, suggest corrections or improvements for the contents underlined. Reading passages on this test range in content from topic arguments to nonfiction narratives in a variety of subjects. The skills being evaluated include: increasing the clarity of argument; improving word choice; improving analysis of topics in social studies and science; changing sentence or word structure to increase organizational quality and impact of writing; and, fixing or improving sentence structure, word usage, and punctuation.[34]
+
+The Writing and Language Test reports two subscores, each ranging from 1 to 15 points:[30]
+
+Expression of Ideas
+Standard English Conventions
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          3. Writting and Language Section:-
+        </h3>
+        <h4>
+          The Writing and Language Test of the SAT is made up of one section with 44 multiple-choice questions and a time limit of 35 minutes.[31] As with the Reading Test, all questions are based on reading passages which may be accompanied by tables, graphs, and charts. The test taker will be asked to read the passages, suggest corrections or improvements for the contents underlined. Reading passages on this test range in content from topic arguments to nonfiction narratives in a variety of subjects. The skills being evaluated include: increasing the clarity of argument; improving word choice; improving analysis of topics in social studies and science; changing sentence or word structure to increase organizational quality and impact of writing; and, fixing or improving sentence structure, word usage, and punctuation.[34]
+
+The Writing and Language Test reports two subscores, each ranging from 1 to 15 points:[30]
+
+Expression of Ideas
+Standard English Conventions
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          4. Mathematics:-
+        </h3>
+        <h4>
+          The mathematics portion of the SAT is divided into two sections: Math Test – No Calculator and Math Test – Calculator. In total, the SAT math test is 80 minutes long and includes 58 questions: 45 multiple choice questions and 13 grid-in questions.[35] The multiple choice questions have four possible answers; the grid-in questions are free response and require the test taker to provide an answer.
+
+The Math Test – No Calculator section has 20 questions (15 multiple choice and 5 grid-in) and lasts 25 minutes.
+The Math Test – Calculator section has 38 questions (30 multiple choice and 8 grid-in) and lasts 55 minutes.
+Several scores are provided to the test taker for the math test. A subscore (on a scale of 1 to 15) is reported for each of three categories of math content:
+
+"Heart of Algebra" (linear equations, systems of linear equations, and linear functions)
+"Problem Solving and Data Analysis" (statistics, modeling, and problem-solving skills)
+"Passport to Advanced Math" (non-linear expressions, radicals, exponentials and other topics that form the basis of more advanced math).
+A test score for the math test is reported on a scale of 10 to 40, with an increment of 0.5, and a section score (equal to the test score multiplied by 20) is reported on a scale of 200 to 800.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          5. Fees:-
+        </h3>
+        <h4>
+          The SAT costs US$49.50 (£39.50, €43.50) (US$64.50 with the optional essay), plus additional fees of over US$45 if testing outside the United States as of 2019.[8] The College Board makes fee waivers available for low income students. Additional fees apply for late registration, standby testing, registration changes, scores by telephone, and extra score reports (beyond the four provided for free).
+        </h4>
+        <br>
+        <a href='https://collegereadiness.collegeboard.org/sat' target='_blank'><h4>Visit Official SAT website</h4></a>
+       
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

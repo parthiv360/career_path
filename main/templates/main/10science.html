@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Science 9 & 10</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+   
+
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 text-lg-start text-center">
+            <h2>
+               IMPORTANT EXAMS FOR STANDARD 10TH SCIENCE STUDENTS.
+            </h2>
+
+            <p>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="team" id="team">
+        <h2 class="text-center">
+            TOP EXAMS TO GIVE IN STANDARD 10TH
+          </h2>
+          <h3>
+            <h4>1. National Talent Search Examination or NTSE </h4>
+            A national level examination cum scholarship program, it is one of most prestigious competitive exams for school students. NTSE’s sole purpose is to identify students who have high academic talent and exceptional intellectual ability. It follows the NCERT prescribed syllabus covering Science, Maths, Social Science and Mental Ability. The students who qualify this two-tier exam receive cash scholarship for the complete academic year. The examination will consist of Mental Ability Test(MAT) and Scholastic Ability Test(SAT)
+            
+            Subjects: Science, Mathematics, Social Science, Mental Ability and General Awareness
+            
+            Medium of examination: English and Hindi
+            
+            Conducting Body: National Council of Educational Research and Training (NCERT)
+            <br>
+            <br>
+            <h4>2. National Level Science Talent Search Exam or NLSTSE</h4>
+            
+            NSTSE is a diagnostic test identifies talented students from classes II to XII and helps them improve their overall learning ability and educational performance. They include interesting questions that require thinking, not simply recalling as per the traditional techniques and breaks the trend of rote-learning. NSTSE provides a detailed skill-wise feedback, highlighting the strengths and weaknesses of students so that immediate action can be taken to correct the aberration and pave a path for improvement.
+            
+            Subjects: Maths, Physics, Chemistry, Biology, General Questions
+            
+            Medium of examination: English
+            
+            Conducting Body: Unified Council
+            <br>
+            <br>
+            <h4>3. Indian National Olympiad (INO)</h4>
+            
+            Financially supported by the Government of India, this programme aims at promoting excellence in science and mathematics among students at school level. Olympiads involve a five-stage procedure. The first stage for each subject is organized by the Indian Association of Physics Teachers (IAPT) in collaboration with teacher associations in other subjects. All the remaining  stages are organized by Homi Bhabha Centre for Science Education (HBCSE).
+            
+            Subjects: Physics, Chemistry, Biology, Astronomy and Junior Science
+            
+            Medium of examination: English
+            
+            Conducting Body: Jointly conducted by Indian Association of Physics Teachers (IAPT) & Homi Bhabha Centre for Science Education (HBCSE)
+            <br>
+            <br>
+            <h4>4. Science Olympiad Foundation</h4>
+            
+            This non-profit organization based in New Delhi was established to promote science, mathematics, introductory computer education and English language skills amongst school children in India. The foundation conducts separate exams for subjects like Computer (National Cyber Olympiad), Maths (International Maths Olympiad), Science (National Science Olympiad) and English (International English Olympiad).
+            
+            Subjects: Science, mathematics, computer education, English, sports and professional courses
+            
+            Medium of examination: English
+            
+            Conducting Body: Science Olympiad Foundation
+            
+            CBSE scholarship for single girl child: Things you should definitely know about
+            <br>
+            <br>
+            <h4> 5. GeoGenius</h4>
+            
+            Today, among most of the students, Science and Maths have become the subjects of interest, making them unaware of the geographical facts about the world. Thus to cultivate the understanding of Geography among the school students, GeoGenius was established.  Students from Class II to XII are eligible for these exams. This test is conducted in two phases. In Phase I, children participate in their respective schools throughout the country and then  on the basis of cut-off, students are selected for Phase-II where they are invited to the National Finals.
+            
+            Medium of examination: English
+            
+            Conducting body:  GeoGenius
+            <br>
+            <br>
+            <h4>6. Kishore Vigyan Protsahan Yojana (KVPY)</h4>
+            
+            It is a national level competitive exam for students of classes XI and XII which is conducted with an aim to encourage students to take up research as a career in the field of Science, Engineering and Medicine. The selected students become eligible for admission to the five-year integrated MS program at the Indian Institute for Science Education and Research.
+            
+            Medium of Examination: English and Hindi
+            
+            Subjects: Focused on Science mainly
+            
+            Conducting body: Department of Science and Technology of the Government of India
+            <br>
+            <br>
+            <h4> 7. Silverzone Olympiads </h4>
+            
+            This Olympiad aims to promote competitive awareness of academics in school students in India and abroad. Conducted for classes I to XII in various subjects, the test aims to develop creative thinking and enhance the problem-solving ability among students.
+            
+            Subject: Computer, Mathematics, Science and English Language
+            
+            Medium of Examination: English
+            
+            Conducting body: Silverzone Foundation.
+            
+            School Education Vs Competitive Examinations
+            <br>
+            <br>
+            <h4>8. National Interactive Maths Olympiad (NIMO)</h4>
+            
+            This national-level test is conducted with a vision to remove the fear of maths from students’ mind, by introducing interactive activities like interactive olympiad, workshops and seminars. Thus, NIMO works for a sole purpose to improve the mathematical skills and mental ability of school students.
+            
+            Subjects: Math
+            
+            Medium of Examination: English
+            
+            Conducting Body: Eduheal Foundation
+            <br>
+            <br>
+            <h4>9. National Biotechnology Olympiad or NBO</h4>
+            
+            NBO is conducted for class I to XII with an aim to enhance the students’ knowledge about Biotechnology issues and to test their aptitude for taking up career in Biotechnology in future. The test comprises of 50 questions for 50 marks.
+            
+            Subjects: Math
+            
+            Medium of Examination: English
+            
+            Conducting Body: Eduheal foundation
+            <br>
+            <br>
+            <h4>10. Assessment of Scholastic Skills Through Educational Testing (ASSET)</h4>
+            
+            ASSET, meant for the students of classes III-X,  uses multiple-choice questions to focus on measuring how well skills and concepts underlying the school syllabus have been understood by the students thus breaking the concept of rote learning. The test is mainly based on the CBSE, ICSE, IGCSE, and major state boards’ curriculum.
+            
+            Subjects: English, Mathematics and Science (Social Studies and Hindi are optional)
+            
+            Medium of Examination: English
+            
+            Conducting Body: Educational Initiatives Pvt. Ltd.
+          </h3>
+  
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

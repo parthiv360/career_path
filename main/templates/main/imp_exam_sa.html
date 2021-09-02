@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Study Abroad - Imp Exams</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  
+
+  </section>
+
+  
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html"><img src="assets/img/logo-nav.png" alt=""></a>
+        
+        
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+          
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    
+    
+
+    </section>
+
+    
+    
+    </section>
+
+    
+    
+
+        
+              </div>
+
+              
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 text-lg-start text-center">
+            <h2>
+              TOEFL/IELTS IS COMPULSORY FOR INDIANS TO STUDY ABROAD
+            </h2>
+
+            <p>
+                TOEFL/IELTS is COMPULSORY for all Indian students dreaming to study abroad. This exam tests your proficiency in the ENGLISH language.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+            <a class="btn btn-ghost" href="#toefl">Know More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    </section>
+
+    
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="text-center">
+          IMPORTANT EXAMS
+        </h2>
+
+        <div class="row">
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="{% url 'main:sat' %}"><img alt="" class="team-img" src="https://www.thoughtco.com/thmb/dbMp07oix2c8sfmGjpxcE1zWl9s=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/bubble-exam-Ryan-Balderas-Eplus-Getty-56a185ff5f9b58b7d0c05c3f.jpg">
+                <div class="card-title-wrap">
+                  <span class="card-title">SAT</span> <span class="card-text">FOR BACHELORS (AFTER 12TH) </span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    ADMISSION TO USA, CANADA AND AUSTRALIA
+                  </h4>
+
+                  
+
+                  <p>
+                    SAT is given during your class 10th, 11th and 12th for admission to colleges in the US, CANADA, and AUSTRALIA. Click to know more.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="{% url 'main:gre' %}"><img alt="" class="team-img" src="https://www.boikhata.com.bd/wp-content/uploads/2020/07/GRE-Logo.png">
+                <div class="card-title-wrap">
+                  <span class="card-title">GRE</span> <span class="card-text">FOR MASTERS</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    MASTERS IN USA, CANADA, EUROPE and more.
+                  </h4>
+
+                  
+
+                  <p>
+                    The Graduate Record Examination (GRE) is another popular examination among Indian students aspiring to study in the US or Canada. It is a fairly standardized test that measures the verbal, mathematical and general analytical skills of the candidate, though the format has undergone quite a few changes over the years. It is an admission requirement for many graduate courses, especially in engineering and the sciences, in the US.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6">
+            <div class="card card-block">
+              <a href="{% url 'main:gmat' %}"><img alt="" class="team-img" src="https://expressimmigrantdocuments.com/wp-content/uploads/2020/11/BUY-ORIGINAL-GMAT-CERTIFICATE-WITHOUT-EXAM.jpg">
+                <div class="card-title-wrap">
+                  <span class="card-title">GMAT</span> <span class="card-text">Required for MBA</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                    MBA IN USA, CANADA, Europe
+                  </h4>
+
+                  
+
+                  <p>
+                    Management aspirants need to take the Graduate Management Admission Test (GMAT), which is an admissions assessment for business colleges. Average GMAT scores are in the range of 570-580. However, for top school admissions a score of at least 700 is almost mandatory. New sections have been introduced recently, such as Integrated Reasoning, which have made the test more competitive than before.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-xs-6" id="toefl">
+            <div class="card card-block">
+              <a href="{% url 'main:toefl' %}"><img alt="" class="team-img" src="https://exam-practice.com/wp-content/uploads/2020/08/ezgif.com-webp-to-jpg.jpg">
+                <div class="card-title-wrap">
+                  <span class="card-title">TOEFL/IELTS</span> <span class="card-text">Compulsory exam for all.</span>
+                </div>
+
+                <div class="team-over">
+                  <h4 class="hidden-md-down">
+                   English Proficiency Exam
+                  </h4>
+
+                  
+
+                  <p>
+                    The Test of English as a Foreign Language (TOEFL) and the International English Language Testing System (IELTS) probably top the list with regard to the sheer number of students across the world needing to undertake one or the other to demonstrate English language proficiency. 
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

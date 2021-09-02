@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Engineering - Exams</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+  
+
+  </section>
+
+  
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      
+        
+        
+      
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Hello {{ user.username }} !!</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'main:chooseclass' %}">Home</a></li>
+          
+          <li class="dropdown"><a href="#"><span>Choose your class</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>9th & 10th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:scienceten' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerceten' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:artsten' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:diplomaten' %}">DIPLOMA</a></li>
+                  
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>11th & 12th</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'main:science' %}">SCIENCE</a></li>
+                  <li><a href="{% url 'main:commerce' %}">COMMERCE</a></li>
+                  <li><a href="{% url 'main:arts' %}">ARTS</a></li>
+                  <li><a href="{% url 'main:studyabroad' %}">STUDY ABROAD</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="{% url 'main:contact' %}">About us</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'login:logout' %}">Log Out</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    
+    
+
+    </section>
+
+    
+    
+    </section>
+
+    
+    
+
+        
+              </div>
+
+              
+        </div>
+      </div>
+
+    </section>
+
+    
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 text-lg-start text-center">
+            <h2>
+               IMPORTANT Engineering Examinations.
+            </h2>
+
+            <p>
+                These are some of the exams you need to give to get into top engineering colleges.
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    
+    
+    </section>
+
+    
+    <section class="team" id="team">
+      
+        <h2 class="text-center">
+          Examinations
+        </h2>
+        <h3 style="color: #199EB8;">
+          1. JEE MAINS:-
+        </h3>
+        <h4>
+          JEE Main has two papers, Paper-I and Paper-II. Candidates may opt for either or both of them. Both papers contain multiple choice questions. Paper-I is for admission to B.E./B.Tech courses and is conducted in a Computer Based Test mode. Paper-II is for admission in B.Arch and B.Planning courses and will also be conducted in Computer Based Test mode except for one paper, namely the 'Drawing Test' which shall be conducted in Pen and Paper mode or offline mode. From January 2020 an additional Paper - III is being introduced for B.Planning courses separately.
+
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          2. JEE ADVANCED:-
+        </h3>
+        <h4>
+          The top students who take the JEE-Main qualify for the JEE-Advanced examination. In 2018, 224,000 students were allowed to take the JEE-Advanced,[5] a number that had gone up from 220,000 in 2017 and 200,000 in 2016.
+          <br>
+          The Joint Seat Allocation Authority (JoSAA) conducts the joint admission process for a total of 23 Indian Institute of Technology campuses, 31 National Institute of Technology campuses, 25 Indian Institute of Information Technology campuses and 19 other Government Funded Technical Institutes (GFTIs) based on the rank obtained by a student in JEE Mains and JEE Advanced
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          3. BITSAT:-
+        </h3>
+        <h4>
+          The Birla Institute of Technology and Science (BITS) Pilani is one of the best institutions in India offering technology and engineering programmes as well as other professional courses. It has status of a Deemed to be University under Section 3 of the UGC Act.
+          <br>
+          BITSAT (BITS Admission Test) is a computer-based admission test conducted by BITS, Pilani for its integrated first-degree programmes offered by all its three campuses – Pilani campus, Goa campus and Hyderabad campus.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          4. WBJEE:-
+        </h3>
+        <h4>
+          West Bengal Joint Entrance Examination or the WBJEE is a state-government controlled centralised test, conducted by the West Bengal Joint Entrance Examinations Board for admission to many private and governmental engineering institutions in West Bengal.
+
+The test is taken after the 12th grade for admission to graduation (also known as Bachelors) courses. The exam can be taken by those who studied Pure Science and Vocational 10+2 stream in plus two level with the specific subjects tested in the examination, which are Physics, Chemistry and Mathematics.
+<br>
+The WBJEE includes the likes of Top universities of India like Jadavpur University, Calcutta University, University of Kalyani,top government engineering colleges like Kalyani Government Engineering College,Jalpaiguri Government Engineering College and few top private institutions, Institute of Engineering and Management, Techno India(Main) salt lake, Haldia Institute of Technology and Heritage Institute of Technology.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          5. COMEDK UGET:-
+        </h3>
+        <h4>
+          COMEDK UGET is a state-level entrance exam conducted by the Consortium of Medical, Engineering and Dental Colleges of Karnataka. The exam is a gateway for admissions to engineering and architecture courses offered by more than 120 colleges/institutes that accept COMEDK scores. Through the COMEDK exam, candidates become eligible for admissions to over 20000 BTech and BArch seats that are on offer. Every year, more than 70,000 candidates appear for the COMEDK exam.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          6. VITEEE:-
+        </h3>
+        <h4>
+          VITEEE is conducted by the Vellore Institute of Technology every year for admission to undergraduate engineering courses (BTech) of participating institutes. Every year, VITEEE is held to enrol students for various undergraduate courses. Around two Lakh students apply for VITEEE every year. All the eligible candidates will be offered admissions to B.Tech programmes at VIT Vellore, Chennai, Bhopal and Amravati.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          7. SRMJEEE:-
+        </h3>
+        <h4>
+          SRM Joint Engineering Entrance Examination or SRMJEEE is conducted by SRM Institute of Science and Technology (SRMIST) twice a year for admission to BTech programmes offered by the institute. SRMJEEE is a university-level exam that acts as a common entrance examination for all SRM Group institutes and universities located at Kattankulathur, Ramapuram, NCR – Ghaziabad, Ramapuram Part – Vadapalani, Amravati, Haryana, and Sikkim.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          8. MET :-
+        </h3>
+        <h4>
+          Manipal Academy of Higher Education (MAHE) conducts its own online entrance exam to offer admissions to candidates in the programmes that it has on offer. Candidates can secure admissions in courses provided at Manipal University on the basis of their rank/score in the Manipal Entrance Test.
+          <br>
+          Programmes on offer for admissions at Manipal University include – MBBS, MD, MS, PG Medical Diploma, MSc (in many disciplines), MPhil, DM, Bachelor of Audiology & Speech Pathology (BASLP), Bachelor of Cardiovascular Technology (BSc CVT), BSc (in many disciplines), Bachelor of Physiotherapy (BPT), BTech (in many disciplines), MTech (in many disciplines), MSc (in many disciplines), BArch, BDes, BA, MA and the likes.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          9. AP EAMCET :-
+        </h3>
+        <h4>
+          AP EAMCET (Andhra Pradesh Engineering Agricultural and Medical Common Entrance Test) has been renamed as AP EAPCET, which stands for Andhra Pradesh Engineering Agricultural and Pharmacy Common Entrance Test. It is a state-level exam conducted by Jawaharlal Nehru Technological University (JNTU), Kakinada for admissions to Engineering, Agriculture and Pharmacy courses offered at more than 425 private institutes in Andhra Pradesh state.
+        </h4>
+        <br>
+        <h3 style="color: #199EB8;">
+          10. MHTCET :-
+        </h3>
+        <h4>
+          MHT CET (or Maharashtra Common Entrance Test) is a common state level entrance exam conducted by the State Common Entrance Test Cell, Government of Maharashtra every year for admission to undergraduate engineering, pharmacy and agriculture courses such as B.Tech/ B.E, Pharma D and B.Pharma offered at colleges in Maharashtra.
+          <br>
+          The exam will comprise three papers. Paper 1: Mathematics, Paper 2: Physics and Chemistry and Paper 3: Zoology and Botany. Questions will be of MCQ type and the duration will be 90 minutes for each paper.
+        </h4>
+        
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+                  
+
+    
+    
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-start text-center">
+            <p class="copyright-text">
+              &copy; Copyright <strong>Career Path</strong>. All Rights Reserved
+            </p>
+            <div class="credits">
+              Designed by <a href="{% url 'main:contact' %}" target="_blank">Career Path Team</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'main:index' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'main:contact' %}">About Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+
+  
+  <script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>
