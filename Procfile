@@ -1,0 +1,1 @@
+web: gunicorn cr101.wsgi
