@@ -23,3 +23,17 @@ Another major problem we ran into was making the website responsive for differen
 Also finding reliable websites for information of collges and courses was a difficult task as our aim was to make our website highly trustworthy, so we took the help of some mentors and seniors from the educational field, who helped us immensely in providing information which is accurate. 
 
 In this way we also learned the importance of research and how important quality is to any website. Also while deploying this website on heroku we faced some minor issues which we overcame with the help of youtube videos.
+
+## Tech Stack
+asgiref==3.3.4
+dj-database-url==0.5.0
+Django==3.2.4
+django-heroku==0.3.1
+gunicorn==20.1.0
+mysqlclient==2.0.3
+Pillow==8.3.0
+psycopg2==2.9.1
+python-decouple==3.4
+pytz==2021.1
+sqlparse==0.4.1
+whitenoise==5.3.0
